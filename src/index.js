@@ -32,14 +32,16 @@ const data={
     password: req.body.password
 }
 //data given to mongodb
-
-await collection.insertMany([data])
+let finaldata= new collection(data)
+await finaldata.save();
+//await collection.insertMany([data])
 // after the details stored we will directed to home page 
 
 res.render("home")
 }catch(error){
     next(error);
 }
+//res.render("contact")
 });
 app.listen(3000,()=>{
     console.log("port connected ");

@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+<title>coding tutorials </title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  /*background: url('https://static.vecteezy.com/system/resources/previews/024/689/019/non_2x/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-virtual-tunnel-warp-made-with-digital-code-data-flow-illustration-vector.jpg') no-repeat;
+  background-size: cover;*/
+}
+
+/* header */
+.header
+{
+padding: 80px;
+background: url('https://static.vecteezy.com/system/resources/previews/024/689/019/non_2x/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-virtual-tunnel-warp-made-with-digital-code-data-flow-illustration-vector.jpg') no-repeat;
+background size :cover;
+text-align: center;
+}
+/* h1 */
+.header h1 {
+  font-size: 40px;
+  color:aliceblue;
+}
+
+/*navigation bar */
+.navbar {
+  overflow: hidden;
+  background:black ;
+  
+}
+
+/*navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/*nav hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color:antiquewhite;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*left column */
+.side {
+  flex: 90%;
+  /*background-color: #d9d8d8df*/;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 60%;
+ /* background-color: white*/;
+  padding: 18px;
+}
+
+img {
+  background-color:;
+  padding: 10px;
+  size: 100px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(2, 6, 14);
+  color:aliceblue;
+}
+
+</style>
 </head>
 <body>
-    <h1> HOME </h1>
+
+<div class="header"><h1>Welcome to coding tutorials </h1></div>
+
+<div class="navbar">
+  <a href="About us.html">About Us</a>
+  <a href="/login">Login</a>
+  <a href="https://hips.hearstapps.com/hmg-prod/images/pop-touch-screen-laptops-656e43d462418.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*">Gallery</a>
+  <a href="/contact" class="right">Contact Us</a>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>About Us</h2>
+    <p>our ultimate resource for learning and mastering coding skills.</p>
+    <p>Learn the fundamentals of web development with our comprehensive HTML and CSS tutorials.</p>
+    <p>Build practical projects to apply your coding skills and create impressive portfolio pieces</p>
+    <div><img src="https://hips.hearstapps.com/hmg-prod/images/pop-touch-screen-laptops-656e43d462418.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*"></div>
+  </div>
+  <div class="side">
+    <h2>Make Your Dream True</h2>
+    <p>Your nearest step is waiting for you.</p><br>
+    <h3>Start Your Membership</h3>
+    <p>Premium people are always ahead of rest of the crowd wishfully living in peace.</p>
+    <h3>Enjoy Your New Home</h3>
+    <p>Simple steps and your dream home opens for you.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h3>limited offers avail before 15TH JUNE</h3>
+  <p>Copyright @YashikaBhandari </p>
+</div>
+
 </body>
 </html>
