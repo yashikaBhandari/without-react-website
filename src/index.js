@@ -41,8 +41,41 @@ res.render("home")
 }catch(error){
     next(error);
 }
+
+
+
+
 //res.render("contact")
+})
+/*app.post("/login",async (req,res)=>{
+    try{
+        const check =await collection.findOne({name:req.body.name})
+        if(check.password===req.body.password){
+            res.status(201).render("home",{ naming : '${req.body.password}+{req.body.name}'})
+        }
+        else{
+            res.send("wrong password")
+        }
+    }
+    catch{
+        res.send("wrong details")
+    }
+    
 });
+*/
+/*app.post("/login", async (req, res) => {
+    try {
+        const check = await collection.findOne({ name: req.body.name });
+        if (check.password === req.body.password) {
+            res.status(201).render("home");
+        } else {
+            res.send("wrong password");
+        }
+    } catch (error){
+        res.send("wrong details");
+    }
+});*/
+
 app.listen(3000,()=>{
     console.log("port connected ");
 })
