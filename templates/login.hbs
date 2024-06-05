@@ -84,6 +84,11 @@ h3 {
 <body>
     <div class="container">
         <h2>LOG IN</h2>
+        <!--If you want to display the error message on the login page itself instead of sending a
+         separate response, you can pass the error message as a parameter to the login page rendering-->
+        {{#if error}}
+        <p>{{error}}</p> 
+        {{/if}}
         <form action="/login" method="post">
             <div class="input-container">
                 <input type="text" name="name" placeholder="Name" required>

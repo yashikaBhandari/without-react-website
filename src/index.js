@@ -100,7 +100,7 @@ app.post("/login", async (req, res) => {
             res.render("aboutus");
         } else {
             // If no user is found, render an error message or redirect to the login page
-            res.render("login", { error: "Invalid username or password" });
+            res.render("login",{error:"invalid credentials"});
         }
     } catch (error) {
         // Handle any errors that occur during the database query
