@@ -16,6 +16,17 @@ app.get("/",(req,res)=>{
 app.get("/signup",(req,res)=>{
     res.render("signup")
 })
+app.get("/home", (req, res) => {
+    res.render("home");
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+app.get("/login", (req, res) => {
+    res.render("login");
+});
+
  // when user will enter the name , password and submit on signup 
  //page the copy of details will be stored in our database 
  app.use((err, req, res, next) => {
@@ -46,7 +57,7 @@ res.render("home")
 
 
 //res.render("contact")
-})
+});
 /*app.post("/login",async (req,res)=>{
     try{
         const check =await collection.findOne({name:req.body.name})
@@ -75,6 +86,29 @@ res.render("home")
         res.send("wrong details");
     }
 });*/
+// Add route handler for login form submission
+app.post("/login", async (req, res) => {
+    try {
+        // Get username and password from the request body
+        const { name, password } = req.body;
+        
+        // Query the database to find a user with the provided credentials
+        const user = await collection.findOne({ name, password });
+
+        // If a user is found, render the about us page
+        if (user) {
+            res.render("aboutus");
+        } else {
+            // If no user is found, render an error message or redirect to the login page
+            res.render("login", { error: "Invalid username or password" });
+        }
+    } catch (error) {
+        // Handle any errors that occur during the database query
+        console.error(error);
+        res.status(500).send("Internal Server Error");
+    }
+});
+
 
 app.listen(3000,()=>{
     console.log("port connected ");
