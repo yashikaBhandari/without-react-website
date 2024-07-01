@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Coding Website</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 0;
+  color: #666;
+}
+/* for navbar*/
+
+/*navigation bar */
+
+/* Navbar container */
+/* Reset some default styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: black;
+  padding: 14px 10px;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: fixed
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar links container */
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Navbar links */
+.navbar ul li a {
+  color: #f9f8f8;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change color on hover */
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+    {{> navbar}}
+
+    
+  <div class="container">
+    <header>
+
+      <h1>Gallery</h1>
+    </header>
+    <section class="gallery">
+
+      <div class="gallery-item">
+        <img src="https://potomac.edu/wp-content/uploads/2020/12/benefits-of-coding-e1606911064541.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.uwindsor.ca/dailynews/sites/uwindsor.ca.dailynews/files/styles/full/public/900_codetowin.jpg?itok=E9F-5dCv" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.salem.edu/wp-content/uploads/blocks/content/honor-code-signing-1600x950.jpg" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.w3docs.com/uploads/media/default/0001/05/20ee259a926c373693ede8a3705ef1cf8899cfb5.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-item">
+        <img src="https://fsa2-assets.imgix.net/assets/artist.jpg?auto=compress%2Cformat&crop=focalpoint&domain=fsa2-assets.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=800&ixlib=php-3.3.0&w=1200" alt="Image 5">
+      </div>
+      <div class="gallery-item">
+        <img src="https://res.cloudinary.com/highereducation/images/f_auto,q_auto/w_400,h_240,c_fill,f_auto,fl_lossy,q_auto,g_face/v1679342347/ComputerScience.org/computer-programmig-languages-swift-1/computer-programmig-languages-swift-1.jpg?_i=AA" alt="Image 6">
+      </div>
+      <div class="gallery-item">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/0*fkYhsy9PjNRVc4Gv" alt="Image 7">
+      </div>
+      <div class="gallery-item">
+        <img src="https://hackbrightacademy.com/content/uploads/2022/07/HB-Blog-Featured-New-1-1030x539.png" alt="Image 8">
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Coding Website. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

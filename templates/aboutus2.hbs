@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Coding Website</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-photo {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 2 1 500px;
+}
+
+.about-text h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.about-text p,
+.about-text ul {
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 0;
+  color: #666;
+}
+
+
+
+/* for navbar*/
+
+/*navigation bar */
+
+/* Navbar container */
+/* Reset some default styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: black;
+  padding: 14px 10px;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: fixed
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar links container */
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Navbar links */
+.navbar ul li a {
+  color: #f9f8f8;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change color on hover */
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+</style>
+</head>
+<body>
+{{> navbar}}
+
+  <div class="container">
+    <header>
+      <h1>About Us</h1>
+    </header>
+    <section class="about">
+      <img src="https://images.squarespace-cdn.com/content/v1/570ebc54e32140a560e3d6d4/1610738838099-F36MYQU07CGHTKXFP941/codieclear.png" alt="Coding Team" class="team-photo">
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>We are a passionate team of developers, educators, and tech enthusiasts dedicated to helping you start your coding journey. Our mission is to provide high-quality, accessible, and engaging coding education to learners of all levels.</p>
+        
+        <h2>Our Courses</h2>
+        <ul>
+          <li>Python Programming: Master one of the most versatile and in-demand programming languages in the industry.</li>
+          <li>Web Development: Build dynamic websites and web applications using HTML, CSS, JavaScript, and more.</li>
+          <li>Data Science: Dive into the world of data analysis and machine learning with Python and R.</li>
+          <li>Mobile App Development: Learn to build native and cross-platform mobile apps for iOS and Android.</li>
+        </ul>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide high-quality services to our customers and create a positive impact in the community. We believe in the power of technology to change lives and are committed to helping our students achieve their goals.</p>
+        
+        <p>Contact us at <a href="mailto:info@example.com">info@example.com</a> for any inquiries.</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Coding Website. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
